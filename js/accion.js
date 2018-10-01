@@ -6,7 +6,7 @@
                 dataType: "json",
                 data: {results: 50}
             });
-            
+
             jqxhr.done(function (data) {
                     $("#boton").hide();
                     var listaUsuarios = data["results"];
@@ -40,7 +40,7 @@
                             dataType : "json"
                         });
                         jqxhr2.done(function (datos) {
-                            var listaPersonas = data["results"];
+                            var listaPersonas = data[1];
                             var textu = "";
                             for (personas of listaPersonas){
                                 var nombre2 = personas["name"]["first"];
